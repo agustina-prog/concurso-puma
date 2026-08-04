@@ -1,0 +1,364 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap);
+*{
+    font-family: "Inter", sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+/* Estilos para el h1*/
+h1{
+    font-size: 4rem;
+    font-weight: 900;
+    text-shadow: 2px 4px 4px #000000;
+    font-family: "Inter", sans-serif;
+}
+/*Estilos para h2*/
+h2{
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 12px;
+    color: #00bcff;
+    font-family: "Inter", sans-serif;
+}
+/*Contenedor de la navegación*/
+nav{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 4%;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(255, 253, 253); 
+}
+
+header {
+    position: relative; 
+    padding: auto;   
+    
+}
+
+header img {
+    width: 100%;
+    display: block;
+}
+header h1{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+header p{
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: 2px 4px 4px #000000;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+header .btn{
+    margin-top: 50px;
+    
+
+}
+
+
+/*Contenedor de la primera seccion*/
+.contenido {
+    position: absolute;
+    top: 40%;
+    left: 8%;
+    color: rgb(255, 253, 253);
+    max-width: 500px;
+}
+/*Estilos para el boton*/
+.btn {
+    background-color: rgb(255, 87, 34);
+    color: rgb(255, 253, 253);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 12px 28px;
+    border-radius: 18px;
+    text-transform: uppercase;
+    display: inline-block;
+    
+}
+/*Contenedor segunda seccion*/
+.seccion-tarjetas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 1% 8%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+
+}
+/*Contenedor de las tarjetas*/
+.contenido-tarjetas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px;
+    min-height: 400px; /*el elemento no puede medir menos que este valor*/
+}
+
+/*Estilos de las tarjetas de la segunda sección*/
+.tarjetas{
+    width: 190px; 
+    min-height: 420px;
+    border:3px solid rgb(0, 191, 255);
+    border-radius:18px;
+    text-align: center;
+    background: rgb(0, 191, 255);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+/*Imagen de la tarjeta*/
+.tarjetas img{
+    width:100%;
+    height:160px;
+    border-radius: 18px 18px 0 0;
+    background:  rgb(255, 253, 253);
+    object-fit:contain;
+
+}
+/*Contenedor del titulo, parrafo y precio que esta en la tarjeta*/
+.tarjeta-info {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; 
+}
+
+/*Estilos del titulo*/
+.tarjeta-titulo{
+    margin: 0 0 12px 0;
+    font-size: 1.1rem;
+    font-weight: 800;
+    line-height: 1.1;
+    text-align: left;
+}
+/*Estilos del párrafo*/
+.tarjeta-parrafo{
+    margin: 0 0 20px 0;
+    font-size: 0.8rem;
+    line-height: 1.3;
+    font-weight: 400;
+    text-align: left;
+}
+/*Estilos del precio*/
+.tarjeta-precio {
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-align: right;
+    margin-top: auto;
+}
+/*Estilos de la tercera sección*/
+.seccion-concurso {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+/*Estilos de la imagen que se encuentra en la tercera seccion*/
+.seccion-concurso img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.contenido-concurso {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    width: 90%;
+    max-width: 550px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contenido-concurso p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.contenido-concurso .btn {
+    display: inline-block;
+    
+}
+.contenido-social{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Título de la sección */
+.contenido-social h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+
+}
+
+/* Contenedor principal de las 3 tarjetas */
+.contenido-tarjetas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap; 
+}
+
+/* Contenedor principal de las 3 tarjetas */
+.tarjetas-social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap; 
+}
+
+/* Estructura de cada tarjeta */
+.tarjetas-social figure {
+    width: 300px;
+    margin: 0;
+    border-radius: 20px;
+    overflow: hidden; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 191, 255); 
+}
+
+/* Ajuste de la imagen superior */
+.tarjetas-social figure img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover; 
+    display: block;
+}
+
+/* Estilo del texto inferior (<figcaption>) */
+.tarjetas-social figcaption {
+    background-color:rgb(0, 191, 255);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contenedor Principal, organiza contenido y copyright verticalmente */
+.footer {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 253, 253);
+    padding: 50px 80px 30px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 1% 4;
+}
+
+/* Fila Principal (Separa columna izquierda y columna derecha) */
+.footer-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Columna Izquierda (Apila logo, mensaje, botón e iconos) */
+.footer-col-izquierda {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 420px;
+}
+
+.footer-logo {
+    width: 90px;
+}
+
+.footer-texto {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+.btn:hover {
+    background-color: rgb(255, 87, 34);
+}
+
+/* Contenedor de Redes Sociales */
+.footer-redes {
+    display: flex;
+    gap: 12px;
+    margin-top: 5px;
+}
+
+.footer-redes img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* Columna Derecha (Lista de Navegación) */
+.footer-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.footer-nav a {
+    color: rgb(255, 253, 253);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footer-nav a:hover {
+    opacity: 0.7;
+}
+
+/*  Pie del Footer (Copyright Centrado) */
+.footer-copy {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #1a1a1a; /* línea divisoria sutil */
+    padding-top: 20px;
+}
+
+.footer-copy p {
+    margin: 0;
+    font-size: 14px;
+    color: rgb(255, 253, 253);
+}
+
